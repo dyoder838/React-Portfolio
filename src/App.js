@@ -1,16 +1,11 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 
-const useStyles = makeStyles((theme) => {
-
-})
-
 function App() {
-  const classes = useStyles();
+  
   return (
     <Router>
       <main >
