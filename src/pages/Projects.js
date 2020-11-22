@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar"
+import Project from "../components/Project";
 
 function Projects() {
     return (
         <div>
-            <Navbar />
+         <Project />
         </div>
     );
 }

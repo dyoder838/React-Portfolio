@@ -32,9 +32,8 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             Daniel Yoder
           </Typography>
-          <Button color="inherit">About Me</Button>
-          <Button color="inherit">Portfolio</Button>
-          <Button color="inherit">Contact</Button>
+          <Button color="inherit" href="/">About Me</Button>
+          <Button color="inherit" href="/projects">Projects</Button>
         </Toolbar>
       </AppBar>
     </div>
