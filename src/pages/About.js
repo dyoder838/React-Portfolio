@@ -1,10 +1,14 @@
 import React from "react";
 import AboutMe from "../components/AboutMe"
 
+
 function About() {
     return (
-        <div>
-          <AboutMe />
+        
+        <div className="djy">
+            
+            <AboutMe />
+            
         </div>
     );
 }
