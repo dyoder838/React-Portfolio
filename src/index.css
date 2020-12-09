@@ -11,11 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 html {
-    min-height: 100%
+
+    background: url("assets/djy4.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
 }
 
-
-body {
+/* url("assets/djy4.jpg") */
+/* body {
     background: linear-gradient(180deg, #8fc1e3 0%, #5085a5 51%, #31708e 75%);
-}
+} */

@@ -6,33 +6,42 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        width: "100%",
-        height: "100%",
+        width: "50%",
+        height: "50%",
+        zIndex: 1000,
+        backgroundColor: 'white',
+        
+        boxShadow: 'none',
     },
     title: {
-        fontSize: 14,
+        color: "black",
+    },
+    story: {
+        fontSize: 20,
+        color: "black",
     },
     pos: {
         marginBottom: 12,
     },
+
 });
 
 export default function OutlinedCard() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root} variant="outlined">
+        <Card className={classes.root} >
             <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Bio
+                <Typography className={classes.title} color="textPrimary" gutterBottom>
+                
         </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h1" className={classes.title}>
                     Hi, I'm Dan
         </Typography>
-                <Typography className={classes.pos} color="textSecondary">
+                <Typography className={classes.pos} color="textPrimary">
                     I am an aspiring Full-Stack Web Developer from Seattle, Washington
         </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className={classes.story}>
                     I really enjoy the complex problem solving inherent in Web Development,
                     both on the back and front
                     end. I have always enjoyed building and creating; from Legos to landscaping to PC building -
