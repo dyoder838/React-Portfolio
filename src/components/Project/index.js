@@ -29,9 +29,11 @@ export default function Overlay(props) {
             justify="center"
             alignItems="center">
 
-
+            <Grid item xs={9}>
+            
             {ProjectDb.map((card, index) =>
-                <Grid key={index} position="flex" item xs={12} sm={6} md={6} lg={4} xl={3} ><ProjectCard
+                <Grid key={index} position="flex" item xs={12} sm={6} md={6} lg={4} xl={3} >
+                    <ProjectCard
                     key={index}
                     id={card.id}
                     title={card.title}
@@ -39,8 +41,10 @@ export default function Overlay(props) {
                     repository={card.repository}
                     liveLink={card.liveLink}
                     description={card.description}>
-                </ProjectCard></Grid>)}
-
+                    </ProjectCard>
+                </Grid>)}
+                
+            </Grid>
         </Grid>
 
     )
