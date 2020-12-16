@@ -1,13 +1,13 @@
 import React from "react";
-import AboutMe from "../components/AboutMe"
-
+import Bio from "../../components/Bio"
+import "./style.css"
 
 function About() {
     return (
         
-        <div className="djy">
+        <div className="About">
             
-            <AboutMe />
+            <Bio />
             
         </div>
     );

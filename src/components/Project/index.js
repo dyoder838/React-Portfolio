@@ -20,32 +20,29 @@ export default function Overlay(props) {
     const classes = useStyles();
 
     return (
-
-        <Grid
-            container
-            className={classes.root}
-            spacing={3}
-            direction="row"
-            justify="center"
-            alignItems="center">
-
-            <Grid item xs={9}>
-            
-            {ProjectDb.map((card, index) =>
-                <Grid key={index} position="flex" item xs={12} sm={6} md={6} lg={4} xl={3} >
-                    <ProjectCard
-                    key={index}
-                    id={card.id}
-                    title={card.title}
-                    image={card.image}
-                    repository={card.repository}
-                    liveLink={card.liveLink}
-                    description={card.description}>
-                    </ProjectCard>
-                </Grid>)}
+        
+            <Grid
+                container
+                className={classes.root}
+                spacing={3}
+                direction="column"
+                justify="left"
+                alignItems="left">
                 
+                {ProjectDb.map((card, index) =>
+                    <Grid key={index} z-index="3" item xs={12} sm={6} md={4} lg={4} xl={4} >
+                        <ProjectCard
+                        key={index}
+                        id={card.id}
+                        title={card.title}
+                        image={card.image}
+                        repository={card.repository}
+                        liveLink={card.liveLink}
+                        description={card.description}>
+                        </ProjectCard>
+                    </Grid>)}
+
             </Grid>
-        </Grid>
 
     )
 }
