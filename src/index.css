@@ -12,17 +12,3 @@ code {
     monospace;
 }
 
-html {
-
-    background: url("assets/djy4.jpg")
-      no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
-
-/* url("assets/djy4.jpg") */
-/* body {
-    background: linear-gradient(180deg, #8fc1e3 0%, #5085a5 51%, #31708e 75%);
-} */

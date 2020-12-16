@@ -9,21 +9,23 @@ const useStyles = makeStyles({
         width: "50%",
         height: "50%",
         zIndex: 1000,
-        backgroundColor: 'white',
-        
-        boxShadow: 'none',
+        backgroundColor: "#ffffff",
+        opacity: 0.6,
+
     },
     title: {
         color: "black",
     },
     story: {
         fontSize: 20,
-        color: "black",
+        
+        fontWeight: "bold", 
+        color: "#000000,"
     },
     pos: {
         marginBottom: 12,
     },
-
+  
 });
 
 export default function OutlinedCard() {
@@ -32,15 +34,18 @@ export default function OutlinedCard() {
     return (
         <Card className={classes.root} >
             <CardContent>
+
                 <Typography className={classes.title} color="textPrimary" gutterBottom>
+                </Typography>
                 
-        </Typography>
                 <Typography variant="h5" component="h1" className={classes.title}>
                     Hi, I'm Dan
-        </Typography>
+                </Typography>
+                
                 <Typography className={classes.pos} color="textPrimary">
                     I am an aspiring Full-Stack Web Developer from Seattle, Washington
-        </Typography>
+                </Typography>
+                
                 <Typography variant="body2" component="p" className={classes.story}>
                     I really enjoy the complex problem solving inherent in Web Development,
                     both on the back and front
@@ -50,11 +55,13 @@ export default function OutlinedCard() {
                     experience in Business Management, and adaptability from my service in the military, with a
                     certificate in Full Stack Web Development from the University of Washington. I am known for
                     extreme focus, outstanding team communication, and strong problem-solving skills using
-                    JavaScript, HTML, CSS, NODE.js, MySQL, Bootstrap, Stackoverflow, and Google search... I am
+                    JavaScript, HTML, CSS, NODE.js, MySQL, Bootstrap, Stackoverflow, React and Google search... I am
                     passionate about providing a world class user experience and streamlined functionality both
                     to developers and end users.
-        </Typography>
-        </CardContent>
+                </Typography>
+
+            </CardContent>
+
         </Card>
     );
 }
