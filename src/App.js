@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import About from './pages/About/'
 import Projects from './pages/Projects/'
-import Navbar from "./components/Navbar"
+import Nav from "./components/Nav"
 import Footer from "./components/Footer"
 
 
@@ -45,10 +45,10 @@ function App() {
             <Grid container className={classes.root} >
 
                 <Grid item xs={12} className={classes.navBar}>
-                    <Navbar />
+                    <Nav />
                 </Grid>
 
-                    <Grid item className={classes.about}>
+                    <Grid item xs={12} className={classes.about}>
                         <Route exact path="/" component={About} />
                     </Grid>
 

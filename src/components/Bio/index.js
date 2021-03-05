@@ -8,22 +8,23 @@ const useStyles = makeStyles({
     root: {
         width: "50%",
         height: "50%",
-        zIndex: 1000,
-        backgroundColor: "#ffffff",
-        opacity: 0.6,
-
+        zIndex: 3,
+        background: "rgba(255,255,255, 0.6)",
     },
     title: {
+        fontWeight: 'bold', 
+        fontSize: 30,
         color: "black",
     },
     story: {
         fontSize: 20,
-        
         fontWeight: "bold", 
-        color: "#000000,"
+        
     },
     pos: {
         marginBottom: 12,
+        color: 'black',
+        fontWeight: 'bold'
     },
   
 });
@@ -35,18 +36,18 @@ export default function OutlinedCard() {
         <Card className={classes.root} >
             <CardContent>
 
-                <Typography className={classes.title} color="textPrimary" gutterBottom>
+                <Typography className={classes.title} gutterBottom>
                 </Typography>
                 
-                <Typography variant="h5" component="h1" className={classes.title}>
+                <Typography  component="h1" className={classes.title}>
                     Hi, I'm Dan
                 </Typography>
                 
-                <Typography className={classes.pos} color="textPrimary">
+                <Typography className={classes.pos}>
                     I am an aspiring Full-Stack Web Developer from Seattle, Washington
                 </Typography>
                 
-                <Typography variant="body2" component="p" className={classes.story}>
+                <Typography  component="p" className={classes.story}>
                     I really enjoy the complex problem solving inherent in Web Development,
                     both on the back and front
                     end. I have always enjoyed building and creating; from Legos to landscaping to PC building -
